@@ -63,7 +63,8 @@ export default function middleware(request: Request) {
   if (path === '/' && SOCIAL_PREVIEW_UA.test(ua)) {
     const variant = VARIANT_HOST_MAP[host];
     if (variant && isAllowedHost(host)) {
-      const og = VARIANT_OG[variant];
+    const og = VARIANT_OG[variant];
+    if (!og) return NextResponse.next();
       const html = `<!DOCTYPE html><html><head>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="${og.title}"/>
