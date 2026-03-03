@@ -1,3 +1,4 @@
+// relay: https://relay.digitalveracity.net
 import { createRelayHandler } from './_relay.js';
 
 export const config = { runtime: 'edge' };
