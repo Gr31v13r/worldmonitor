@@ -1,5 +1,6 @@
 const ALLOWED_ORIGIN_PATTERNS = [
   /^https:\/\/(.*\.)?worldmonitor\.app$/,
+  /^https:\/\/worldmonitor\.digitalveracity\.net$/,
   /^https:\/\/worldmonitor-[a-z0-9-]+-[a-z0-9-]+-projects\.vercel\.app$/,
   /^https:\/\/worldmonitor-[a-z0-9-]+\.vercel\.app$/,
   /^https?:\/\/localhost(:\d+)?$/,
